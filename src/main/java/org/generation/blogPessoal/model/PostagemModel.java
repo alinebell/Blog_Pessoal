@@ -13,17 +13,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
 
-/**
- * A anotação @Entity indica que a classe é uma entidade, ou seja,
- * ele será utilizada para gerar uma tabela no Banco de Dados.
- * 
- * A anotação @Table indica o nome da tabela no Banco de dados.
- * Caso ela não seja declarada, o Banco criará a tabela com o mesmo
- * nome da classe.
- */
 @Entity
 @Table(name = "tb_postagens") 
-
 public class PostagemModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 

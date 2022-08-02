@@ -1,9 +1,9 @@
 package org.generation.blogPessoal.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
-import org.generation.blogPessoal.model.PostagemModel;
-import org.generation.blogPessoal.repository.PostagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import antlr.collections.List;
+import org.generation.blogPessoal.model.PostagemModel;
+import org.generation.blogPessoal.repository.PostagemRepository;
 
 
 @RestController
@@ -28,6 +29,7 @@ public class PostagemController {
 	
 	@Autowired 
 	private PostagemRepository postagemRepository;
+	/*como se disesse uma nova categoria de postagemRepository*/
 	
 	@GetMapping
 	public ResponseEntity<List<PostagemModel>> getAll (){
