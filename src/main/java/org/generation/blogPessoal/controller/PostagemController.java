@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.generation.blogPessoal.model.PostagemModel;
 import org.generation.blogPessoal.repository.PostagemRepository;
 
-
 @RestController
 @RequestMapping("/postagens") 
 @CrossOrigin(origins = "*", allowedHeaders = "*") 
@@ -29,7 +28,6 @@ public class PostagemController {
 	
 	@Autowired 
 	private PostagemRepository postagemRepository;
-	/*como se disesse uma nova categoria de postagemRepository*/
 	
 	@GetMapping
 	public ResponseEntity<List<PostagemModel>> getAll (){
