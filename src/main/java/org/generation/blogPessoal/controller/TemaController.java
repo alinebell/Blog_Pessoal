@@ -47,13 +47,8 @@ public class TemaController {
 	@PostMapping
 	public ResponseEntity<TemaModel> postTema(@Valid @RequestBody TemaModel tema) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(temaRepository.save(tema));
-	}
+	} 
 	
-	@PostMapping
-	public ResponseEntity<TemaModel> post (@RequestBody TemaModel tema){
-		return ResponseEntity.status(HttpStatus.CREATED)
-				.body(temaRepository.save(tema));
-	}
 	
 	@PutMapping
 	public ResponseEntity<TemaModel> put (@RequestBody TemaModel tema){

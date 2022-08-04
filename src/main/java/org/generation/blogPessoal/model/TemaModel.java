@@ -24,7 +24,7 @@ public class TemaModel {
 	@NotBlank(message = "O atributo tema é Obrigatório e não pode utilizar espaços em branco!") 
 	private String descricao;
 	
-	@OneToMany(mappedBy="tema")
+	@OneToMany(mappedBy="tema", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("tema")
 	private List<PostagemModel> postagem;
 
