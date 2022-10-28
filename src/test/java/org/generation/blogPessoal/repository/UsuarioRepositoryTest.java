@@ -27,13 +27,13 @@ public class UsuarioRepositoryTest {
 	@BeforeAll
 	void start() {
 		usuarioRepository.deleteAll();
-		usuarioRepository.save(new UsuarioModel(0L, "João da Silva", "joao@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg"));
+		usuarioRepository.save(new UsuarioModel(0L, "João da Silva", "joao@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg", ""));
 		
-		usuarioRepository.save(new UsuarioModel(0L, "Manuela da Silva", "maria@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg"));
+		usuarioRepository.save(new UsuarioModel(0L, "Manuela da Silva", "maria@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg", ""));
 		
-		usuarioRepository.save(new UsuarioModel(0L, "Adriana da Silva", "jose@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg"));
+		usuarioRepository.save(new UsuarioModel(0L, "Adriana da Silva", "jose@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg", ""));
 		
-		usuarioRepository.save(new UsuarioModel(0L, "Paulo Antunes", "paulo@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg"));
+		usuarioRepository.save(new UsuarioModel(0L, "Paulo Antunes", "paulo@email.com.br", "12345678", "https://i.imgur.com/56xJy2L.jpeg", ""));
 	}
 	
 	@Test
